@@ -35,3 +35,17 @@ Problem Solving Approach
     Example(ex.1)
       Write function which takes two numbers and returns their sum.
   
+  Concrete Examples
+    Coming up with examples can help you understand the problem better
+    Examples also provide sanity checks that your eventual solution works how it should
+    User Stories! // Unit Tests!
+    
+    Explore Examples
+      1.Start with Simple Examples
+      2.Progress to More Complex Examples
+      3.Explore Examples with Empty Inputs
+      4.Explore Examples with Invalid Inputs
+    
+    Example(ex.2)
+      Write a function which takes in a string and returns counts of each character in the string.
+    
