@@ -39,3 +39,16 @@ Timing Our code
         V2 has 3 operations
         V1 has (5n + 2) operations
         In V1 regardless of the exact number, the number of operations grows roughly proprtionally with n.
+
+Official Intro to Big O
+  Introducing... Big O
+    Big O Notation is a way to formalize fuzzy counting
+    It allows us to talk formally about how the runtime of an algorithm grows as the inputs grow
+    We won't care about the details, only the trends
+  Big O Definition
+    We say that an algorithm is O(f(n)) if the number of simple operations the computer has to do is 
+      eventually less than a constant times f(n), as n increases
+    f(n) could be linear (f(n) = n) // O(n)
+    f(n) could be quadratic (f(n) = n^2) // O(n^2)
+    f(n) could be constant (f(n) = 1) // O(1)
+    F(n) could be something entirely different!

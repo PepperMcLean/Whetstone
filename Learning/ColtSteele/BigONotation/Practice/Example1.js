@@ -1,5 +1,5 @@
 
-function addUpToV1(n) {
+function addUpToV1(n) { // O(n)
   let total = 0;
   for (let i = 1; i<= n; i++) {
     total += i;
@@ -7,7 +7,7 @@ function addUpToV1(n) {
   return total;
 }
 
-function addUpToV2(n) {
+function addUpToV2(n) { // O(1)
   return n * (n + 1) / 2;
 }
 
