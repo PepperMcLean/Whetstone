@@ -31,3 +31,11 @@ Timing Our code
     Different machines will record different times
     The same machine will record different times!
     For fast algorithms, speed measurements may not be precise enough?
+
+  If not time, then what?
+    Rather than counting seconds, which are so variable...
+    Let's count the number of simple operations the computer has to perform!
+      In ex.1 
+        V2 has 3 operations
+        V1 has (5n + 2) operations
+        In V1 regardless of the exact number, the number of operations grows roughly proprtionally with n.
