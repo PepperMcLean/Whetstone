@@ -1,0 +1,33 @@
+Intro to Big O
+  Objectives
+    Motivate the need for something like Big O Notation
+    Describe what Big O Notation is
+    Simplify Big O expressions
+  
+  Whats the idea here?
+    Imagine we have multiple implementations of the same function.
+    How can we determine which one is the "best?"
+    
+  Who cares?
+    It's important to have a precise vocabulart to talk about how our code performs
+    Useful for discussing trade-offs between different approaches
+    When your code slows down or crashes, identifying parts of the code that are inefficient can help us find pain points in our applications
+    Less important: it comes up in interviews!
+
+Timing Our code
+  An Example (ex.1)
+    Suppose we want to write a function that calculates the sum of all numbers from 1 up to (and including) some number n.
+  
+  What does better mean?
+    Faster?
+    Less memory-intensive?
+    More readable?
+    Brevity?
+    Frequently the first two are more important than the others
+  
+  Why not use timers? (ex.1)
+  
+  The Problem with time
+    Different machines will record different times
+    The same machine will record different times!
+    For fast algorithms, speed measurements may not be precise enough?
