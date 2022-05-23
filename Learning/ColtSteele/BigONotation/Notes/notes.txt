@@ -88,4 +88,38 @@ Space Complexity
     Strings require O(n) space (where n is the string length)
     Reference types are generally O(n), where n is the length (for arrays) or the number of keys (for objects)
   
+Logarithms
+    We've encountere some of the mostcommon complexities: O(1), O(n), O(n^2)
+    Sometimes big O expressions involve more complex mathematical expressions
+    One that appears more often than you might like is the logarithm!
+
+  Wait, What's a log again?
+    Log base2(8) = 3 or 2^3 = 8
+    Log base2(value) = exponent, 2^exponent = value
+    We care about the big picture so instead of writing log base2, we will write log
+
+  Wut.
+    This isn't a math course so here's a rule of thumb.
+    The log of a number roughly measures the number of times you can divide that number
+     by 2 before you get a value that's less than or equal to one.
+
+  Log Examples
+    8/2 = 4/2 = 2/2 = 1 which meants log(8) = 3
+    25/2 = 12.5/2 = 6.25/2 = 3.125/2 = 1.5625/2 = 0.78125 which means log(25) = 4.64
+
+  Logarithm Complexity
+    Log time complexity is great!
+    Compares very favorably to O(n)
+
+  Who Cares?
+    Certain searching algorithms have logarithmic time complexity.
+    Efficient sorting algorithms involve logarithms.
+    Recursion sometimes involves logarithmic space complexity.
+
+Recap
+  To analyze performance of an algorithm, we use big O notation
+  Big O notation can give us a high level understanding of the time or space complexity of an algorithm
+  Big O notation doesn't care about precision, only about general trends (linear? quadratic? constant?)
+  The time or space complexity (as measured by big O) depends only on the algorithm, not the hardware used to run the algorithm
+  Big O notation is everyhwere, so get lots of practice!
   

@@ -7,17 +7,17 @@ function addUpToV1(n) { // T= O(n), S= O(1)
   return total;
 }
 
-function addUpToV2(n) { // T= O(1)
+function addUpToV2(n) { // T= O(1), S= O(1)
   return n * (n + 1) / 2;
 }
 
-function logAtLeast5(n) { // T= O(n)
+function logAtLeast5(n) { // T= O(n), S= O(1)
   for (let i = 1; i<= Math.max(5, n); i++) {
     console.log(i);
   } 
 }
 
-function logAtMost5(n) { // T= O(1)
+function logAtMost5(n) { // T= O(1), S= O(1)
   for (let i = 1; i<= Math.min(5, n); i++) {
     console.log(i);
   } 
