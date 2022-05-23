@@ -1,5 +1,5 @@
 
-function addUpToV1(n) { // O(n)
+function addUpToV1(n) { // T= O(n), S= O(1)
   let total = 0;
   for (let i = 1; i<= n; i++) {
     total += i;
@@ -7,20 +7,28 @@ function addUpToV1(n) { // O(n)
   return total;
 }
 
-function addUpToV2(n) { // O(1)
+function addUpToV2(n) { // T= O(1)
   return n * (n + 1) / 2;
 }
 
-function logAtLeast5(n) { // O(n)
+function logAtLeast5(n) { // T= O(n)
   for (let i = 1; i<= Math.max(5, n); i++) {
     console.log(i);
   } 
 }
 
-function logAtMost5(n) { // O(1)
+function logAtMost5(n) { // T= O(1)
   for (let i = 1; i<= Math.min(5, n); i++) {
     console.log(i);
   } 
+}
+
+function double(arr) { // T= O(n), S= O(n)
+  let newArr = [];
+  for (let i = 0; i <= arr,length; i++) {
+    newArr.push(2 * arr[i]);
+  }
+  return newArr;
 }
 
 function testTime(func) {
