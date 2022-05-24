@@ -42,15 +42,65 @@ function charCountP(str) {
   // loop over string, for each character...
   for (var i = 0; i < str.length; i++) {
     var char = str[i].toLowerCase();
-    // if the char is number/letter AND a key in object, add one to count
-    if (result[char] > 0) {
-      result[char]++;
-    // if the char is number/letter AND is not in our object, add it and set value to 1
-    } else {
-      result[char] = 1;
+    if (/[a-z0-9]/.test(char)) {
+      // if the char is number/letter AND a key in object, add one to count
+      if (result[char] > 0) {
+        result[char]++;
+      // if the char is number/letter AND is not in our object, add it and set value to 1
+      } else {
+        result[char] = 1;
+      }
     }
     // if the char is something else, i.e. $, don't do anything
   }
   // return object at end
   return result;
+}
+
+// professor refactor
+
+function charCountP2(str) {
+  // make object to return at end
+  var result = {};
+  // loop over string, for each character...
+  for (var char of str) {
+    char = char.toLowerCase();
+    if (/[a-z0-9]/.test(char)) {
+      // if the char is number/letter AND a key in object, add one to count
+      // if the char is number/letter AND is not in our object, add it and set value to 1
+      obj[char] = ++obj[char] || 1;
+    }
+    // if the char is something else, i.e. $, don't do anything
+  }
+  // return object at end
+  return result;
+}
+
+// P3
+
+function charCountP3(str) {
+  // make object to return at end
+  var result = {};
+  // loop over string, for each character...
+  for (var char of str) {
+    char = char.toLowerCase();
+    if (isAlphaNumeric(char)) {
+      // if the char is number/letter AND a key in object, add one to count
+      // if the char is number/letter AND is not in our object, add it and set value to 1
+      obj[char] = ++obj[char] || 1;
+    }
+    // if the char is something else, i.e. $, don't do anything
+  }
+  // return object at end
+  return result;
+}
+
+function isAlphaNumeric(char) {
+  var code = char.charCodeAt(0);
+  if (!(code > 47 && code < 58) && // numeric (0-9)
+      !(code > 64 && code < 91) && // upper alpha (A-Z)
+      !(code > 96 && code < 123)) { // lower alpha (a-z)
+    return false;
+  }
+  return true;
 }
