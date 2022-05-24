@@ -78,4 +78,9 @@ Problem Solving Approach
       Can you think of other ways to refactor?
       How have other people solved the problem?
     
-    
+  Recap!
+    Understand the Problem
+    Explore Concrete Examples
+    Break it Down
+    Solve/Simplify
+    Look Back & Refactor
